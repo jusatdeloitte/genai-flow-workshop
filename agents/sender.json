@@ -1,0 +1,20 @@
+{
+  "type": "userproxy",
+  "config": {
+    "name": "userproxy",
+    "llm_config": false,
+    "human_input_mode": "NEVER",
+    "max_consecutive_auto_reply": 5,
+    "system_message": "You are a helpful assistant.",
+    "is_termination_msg": null,
+    "code_execution_config": {
+      "work_dir": "coding",
+      "use_docker": false
+    },
+    "default_auto_reply": "TERMINATE",
+    "description": null
+  },
+  "timestamp": "2024-05-26T17:17:28.997805",
+  "user_id": "default",
+  "skills": []
+}
