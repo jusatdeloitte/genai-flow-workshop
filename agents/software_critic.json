@@ -30,38 +30,5 @@
   },
   "timestamp": "2024-05-26T19:04:14.496203",
   "user_id": "guestuser@gmail.com",
-  "skills": [
-    {
-      "name": "list_all_files",
-      "content": "def list_all_files(directory_path: str) -> List[str]:\n    \"\"\"\n    Lists all files in a directory and its subdirectories.\n\n    Args:\n        directory_path (str): The path of the directory to list.\n\n    Returns:\n        List[str]: A list of paths of all files found.\n    \"\"\"\n    file_paths = []\n    try:\n        for root, dirs, files in os.walk(directory_path):\n            for file in files:\n                file_paths.append(os.path.join(root, file))\n    except Exception as e:\n        print(f\"Error listing all files: {e}\")\n    return file_paths\n\n# Example usage:\n# print(list_all_files(\".\"))\n",
-      "file_name": null,
-      "description": null,
-      "timestamp": "2024-05-26T16:25:36.112675",
-      "user_id": "default"
-    },
-    {
-      "name": "search_in_file",
-      "content": "import re\n\ndef search_in_file(file_path: str, search_string: str) -> List[int]:\n    \"\"\"\n    Searches for a specific string in a file and returns the line numbers where it is found.\n\n    Args:\n        file_path (str): The path of the file to search.\n        search_string (str): The string to search for.\n\n    Returns:\n        List[int]: A list of line numbers where the search string is found.\n    \"\"\"\n    line_numbers = []\n    try:\n        with open(file_path, 'r') as file:\n            for i, line in enumerate(file, 1):\n                if re.search(search_string, line):\n                    line_numbers.append(i)\n    except Exception as e:\n        print(f\"Error searching in file: {e}\")\n    return line_numbers\n\n# Example usage:\n# print(search_in_file(\"example.txt\", \"search_string\"))\n",
-      "file_name": null,
-      "description": null,
-      "timestamp": "2024-05-26T16:25:21.329273",
-      "user_id": "default"
-    },
-    {
-      "name": "read_file_content",
-      "content": "def read_file_content(file_path: str) -> Optional[str]:\n    \"\"\"\n    Reads the content of a file.\n\n    Args:\n        file_path (str): The path of the file to read.\n\n    Returns:\n        Optional[str]: The content of the file, or None if an error occurs.\n    \"\"\"\n    try:\n        with open(file_path, 'r') as file:\n            return file.read()\n    except Exception as e:\n        print(f\"Error reading file content: {e}\")\n        return None\n\n# Example usage:\n# print(read_file_content(\"example.txt\"))\n",
-      "file_name": null,
-      "description": null,
-      "timestamp": "2024-05-26T16:25:05.760758",
-      "user_id": "default"
-    },
-    {
-      "name": "list_directory",
-      "content": "def list_directory(directory_path: str) -> Optional[List[str]]:\n    \"\"\"\n    Lists all files and directories in the specified directory.\n\n    Args:\n        directory_path (str): The path of the directory to list.\n\n    Returns:\n        Optional[List[str]]: A list of names of files and directories, or None if an error occurs.\n    \"\"\"\n    try:\n        return os.listdir(directory_path)\n    except Exception as e:\n        print(f\"Error listing directory: {e}\")\n        return None\n\n# Example usage:\n# print(list_directory(\".\"))\n",
-      "file_name": null,
-      "description": null,
-      "timestamp": "2024-05-26T16:24:25.175676",
-      "user_id": "default"
-    }
-  ]
+  "skills": []
 }
