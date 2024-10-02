@@ -1,4 +1,4 @@
-# AI Agents with AutoGen Studio
+# Multi Agent System with AutoGen Studio
 
 Welcome to the AutoGen workshop. This repository serves as a supporting guide
 and contains a series of application examples that we will examine together
