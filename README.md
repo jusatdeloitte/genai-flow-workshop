@@ -27,7 +27,7 @@ Here is the AutoGen Studio start screen. On the left tab, you will find the
 sections `Skills`, `Models`, `Agents`, and `Workflows`, which we will now
 explore in more detail.
 
-![Startscreen](docs/autogenstudio-startscreen.png)
+![Startscreen](docs/autogenstudio-startpage.png)
 
 ### Skills
 
