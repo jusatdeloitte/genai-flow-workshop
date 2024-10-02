@@ -1,0 +1,5 @@
+{
+  "name": "read_file_content",
+  "content": "def read_file_content(file_path: str) -> Optional[str]:\n    \"\"\"\n    Reads the content of a file.\n\n    Args:\n        file_path (str): The path of the file to read.\n\n    Returns:\n        Optional[str]: The content of the file, or None if an error occurs.\n    \"\"\"\n    try:\n        with open(file_path, 'r') as file:\n            return file.read()\n    except Exception as e:\n        print(f\"Error reading file content: {e}\")\n        return None\n\n# Example usage:\n# print(read_file_content(\"example.txt\"))\n",
+  "description": "read file content"
+}

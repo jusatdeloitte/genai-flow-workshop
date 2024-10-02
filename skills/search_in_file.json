@@ -1,0 +1,5 @@
+{
+  "name": "search_in_file",
+  "content": "import re\n\ndef search_in_file(file_path: str, search_string: str) -> List[int]:\n    \"\"\"\n    Searches for a specific string in a file and returns the line numbers where it is found.\n\n    Args:\n        file_path (str): The path of the file to search.\n        search_string (str): The string to search for.\n\n    Returns:\n        List[int]: A list of line numbers where the search string is found.\n    \"\"\"\n    line_numbers = []\n    try:\n        with open(file_path, 'r') as file:\n            for i, line in enumerate(file, 1):\n                if re.search(search_string, line):\n                    line_numbers.append(i)\n    except Exception as e:\n        print(f\"Error searching in file: {e}\")\n    return line_numbers\n\n# Example usage:\n# print(search_in_file(\"example.txt\", \"search_string\"))\n",
+  "description": "search in file"
+}

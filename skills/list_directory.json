@@ -1,0 +1,5 @@
+{
+  "name": "list_directory",
+  "content": "def list_directory(directory_path: str) -> Optional[List[str]]:\n    \"\"\"\n    Lists all files and directories in the specified directory.\n\n    Args:\n        directory_path (str): The path of the directory to list.\n\n    Returns:\n        Optional[List[str]]: A list of names of files and directories, or None if an error occurs.\n    \"\"\"\n    try:\n        return os.listdir(directory_path)\n    except Exception as e:\n        print(f\"Error listing directory: {e}\")\n        return None\n\n# Example usage:\n# print(list_directory(\".\"))\n",
+  "description": "list directory"
+}
