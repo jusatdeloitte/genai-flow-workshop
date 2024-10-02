@@ -19,7 +19,7 @@ isolation. Follow these steps:
 To verify that the installation was successful, follow [this
 guide](https://docs.anaconda.com/anaconda/install/verify-install/).
 
-## Open Terminal (macOS only)
+## 1. Open Terminal (macOS only)
 
 First, open a terminal:
 
@@ -29,7 +29,7 @@ First, open a terminal:
 A terminal should open in the format `(base) $`. If `(base)` is missing, the
 Anaconda installation was incomplete.
 
-## Create Conda Environment
+## 2. Create Conda Environment
 
 Create a new environment with Python v3.10:
 
@@ -44,19 +44,23 @@ Activate the environment:
 (autogen) $ ..
 ```
 
-## Install and Start AutoGenStudio
+## 3. Install and Start AutoGenStudio
 
-Install `autogenstudio` in the new environment:
+3.1. Install `autogenstudio` in the new environment:
 
 ```shell
 (autogen) $ pip install autogenstudio
 ```
 
-Start the AutoGenStudio server (example output included). First, load the
-OpenAI API key into the shell environment:
+3.2. Load the OpenAI API key into the shell environment:
 
 ```shell
 (autogen) $ export OPENAI_API_KEY=<insert API key>
+```
+
+3.3. Start the AutoGenStudio server (example output included). 
+
+```shell
 (autogen) $ autogenstudio ui
 flaml.automl is not available. Please install flaml[automl] to enable AutoML functionalities.
 2024-10-02 10:02:39.841 | INFO     | autogenstudio.utils.utils:get_db_uri:253 - Using database URI: sqlite:////home/myuser/.autogenstudio/database.sqlite
@@ -69,7 +73,7 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
 ```
 
-Once the server is running, you can access the provided URL (in the example,
+3.4. Once the server is running, you can access the provided URL (in the example,
 `http://127.0.0.1:8081`) in your favorite browser, or click
 [here](http://localhost:8081).
 
