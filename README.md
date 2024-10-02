@@ -19,7 +19,7 @@ Next, you can load the team configurations into AutoGen Studio.
 
 ## Team Configurations
 
-- [Software Team](teams/software_team.json)
+- [Software Team:](teams/software_team.json) Software_Programmer, Software_Critic, groupchat_assistant
 
 ## Tour of AutoGen Studio
 
