@@ -1,77 +1,73 @@
-# AI Agenten mit AutoGen Studio
+# AI Agents with AutoGen Studio
 
-Willkommen zum AutoGen Workshop. Dieses Repository dient als untestützender
-Guide und enthält eine Reihe von Anwendungsbeispielen, die wir im Workshop
-gemeinsam untersuchen.
+Welcome to the AutoGen workshop. This repository serves as a supporting guide
+and contains a series of application examples that we will examine together
+during the workshop.
 
-Installieren Sie zunächst AutoGen Studio auf Ihrem PC. AutoGen Studio ist ein
-Webserver, denn Sie lokal über ihren Browser bedienen können. Das Studio
-ermöglicht es Ihnen Teams von AI Agents zu erstellen und zu steuern.
+First, install AutoGen Studio on your PC. AutoGen Studio is a web server that
+you can operate locally through your browser. The studio allows you to create
+and manage teams of AI agents.
 
-Im Repo befinden sich beispielhafte Team-Konfigurationen im Json-Format, die
-Sie ins Studio einlesen können.
+The repository contains example team configurations in JSON format, which you
+can load into the studio.
 
-## Installations-Guide
+## Installation Guide
 
-Folgen Sie zunächst der [Installationsbeschreibung](docs/install.md).
+First, follow the [installation instructions](docs/install.md).
 
-Als nächstes können Sie die aus Team-Konfigurationen ins AutoGen
-Studio laden.
+Next, you can load the team configurations into AutoGen Studio.
 
-## Team-Konfigurationen
+## Team Configurations
 
 - [Software Team](teams/software_team.json)
 
-## Tour durch AutoGen Studio
+## Tour of AutoGen Studio
 
-Hier ist die Startscreen von AutoGen Studio. Im linken Reiter finden Sie die
-Rubriken `Skills`, `Models`, `Agents`, und `Workflows`, die wir uns nun näher
-anschauen wollen.
+Here is the AutoGen Studio start screen. On the left tab, you will find the
+sections `Skills`, `Models`, `Agents`, and `Workflows`, which we will now
+explore in more detail.
 
 ![Startscreen](docs/autogenstudio-startscreen.png)
 
 ### Skills
 
-Skills zeigt eine Liste von Python Funktionen, die Agenten zu Verfügung stehen.
-Agenten, denen eine Skill zugewiesen wird, können diese abhängig vom Zustand
-des LLM Models mit inferierten Parametern ausführen. Dies kann, wie im
-Beispiel, dazu genutzt werden ein Bild zu generieren und abzuspeichern.
+Skills display a list of Python functions available to the agents. Agents
+assigned a skill can execute it depending on the state of the LLM model with
+inferred parameters. This can be used, as shown in the example, to generate and
+save an image.
 
-![Skillexample](docs/autogenstudio-skill.png)
+![Skill example](docs/autogenstudio-skill.png)
 
 ### Models
 
-Models zeigt eine Liste der Deep-Learning Modelle, im Studio zur Verfügung
-stehen. Jedes Model kann einem Agenten zugewiesen werden, und formt die Basis
-der agentischen Datenverarbeitung.
+Models show a list of the deep learning models available in the studio. Each
+model can be assigned to an agent and forms the basis of the agent's data
+processing.
 
 ### Agents
 
-Agents zeigt eine Liste der Agenten, die im Studio gespeichert sind. Es gibt
-drei Typen von Agent.
+Agents display a list of the agents stored in the studio. There are three types
+of agents:
 
-1. **User Proxy Agent.** Dieser empfängt entweder einen Prompt vom Benutzer,
-   also von Ihnen, oder er can Python und andere Code-Blöcke ausführen.
+1. **User Proxy Agent.** This agent either receives a prompt from the user
+   (you) or can execute Python and other code blocks.
 
-2. **Assistant Agent.** Ein Assistent empfängt und prozessiert einen Prompt mit
-   Hilfe des zugrundeliegenden LLM Models zurück an den Prompter. Der Assistent
-   Agent kann auch Code-Blöcke ausführen, und prozessiert dann den Output
-   weiter.
+2. **Assistant Agent.** An assistant processes a prompt with the underlying LLM
+   model and responds to the prompter. The assistant agent can also execute
+   code blocks and process the output further.
 
-3. **GroupChat.** Ein GroupChat Manager koordiniert die Interaktion zwischen
-   mehreren Agenten.  Das heißt, er empfängt Text von einem Agenten und
-   entscheidet an welchen Agenten dieser Text weitergeleitet wird.
+3. **GroupChat Manager.** This manager coordinates interactions between
+   multiple agents. It receives text from one agent and determines to which
+   agent the text should be forwarded.
 
 ### Workflows
 
-Workflows zeigt die Liste der Workflows. Jeder Workflow instanziert eine Reihe
-von Agenten und stellt eine Kommunikationsbeziehung zwischen diesen her.
+Workflows display the list of workflows. Each workflow instantiates a set of
+agents and establishes communication relationships between them.
 
-Es gibt zwei Arten von Workflows zur Auswahl.
+There are two types of workflows to choose from:
 
-1. **Autonomous (Chat).** Eine Menge von Agenten nehmen an einem
-   Nachrichten-Austausch teil wobei ($n>2$) ein GroupChat Manager bestimmt, an
-   wen eine Nachricht gerichtet ist.
+1. **Autonomous (Chat).** A group of agents participates in a message exchange,
+   where ($n>2$) a GroupChat Manager decides to whom a message is directed.
 
-2. **Sequential.** Eine Reihen von Agenten tauschen in einer bestimmten
-   Reihenfolge Nachrichten aus.
+2. **Sequential.** A sequence of agents exchanges messages in a specific order.

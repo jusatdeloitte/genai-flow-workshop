@@ -1,63 +1,62 @@
 # Installation
 
-Bedingung für eine Workshop-Teilnahme ist eine funktionierende Installation des
-Programms
+A prerequisite for participating in the workshop is a working installation of
+the program
 [AutoGenStudio](https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio).
-Dies wird zur systemischen Abgrenzung in ein separates anaconda env installiert.
-Hierzu unternehmen Sie folgende Schritte.
+This will be installed in a separate Anaconda environment to ensure system
+isolation. Follow these steps:
 
-1. Anaconda installieren.
-2. Im einem Terminal ein Anaconda environment erstellen.
-3. AutoGenStudio installieren und starten.
+1. Install Anaconda.
+2. Create an Anaconda environment in a terminal.
+3. Install and start AutoGenStudio.
 
-## Anaconda installieren
+## Install Anaconda
 
-- Installation für [macOS](https://docs.anaconda.com/anaconda/install/mac-os/)
-- Installation für [Linux](https://docs.anaconda.com/anaconda/install/linux/)
-- Installation für [Windows](https://docs.anaconda.com/anaconda/install/windows/)
+- Installation for [macOS](https://docs.anaconda.com/anaconda/install/mac-os/)
+- Installation for [Linux](https://docs.anaconda.com/anaconda/install/linux/)
+- Installation for [Windows](https://docs.anaconda.com/anaconda/install/windows/)
 
-Um zu überprüfen, dass die Installation erfolg hatte, folgen Sie
-[dieser](https://docs.anaconda.com/anaconda/install/verify-install/)
-Beschreibung.
+To verify that the installation was successful, follow [this
+guide](https://docs.anaconda.com/anaconda/install/verify-install/).
 
-## Terminal öffnen (nur macOS)
+## Open Terminal (macOS only)
 
-Öffnen Sie zunächst ein Terminal:
+First, open a terminal:
 
-1. <Cmd+Space> drücken zum Öffnen von Spotlight Search.
-2. "Terminal" eingeben und Enter drücken.
+1. Press <Cmd+Space> to open Spotlight Search.
+2. Type "Terminal" and press Enter.
 
-Hiernach sollte sich ein Terminal öffnen im Format `(base) $`. Fehlt `(base)`,
-so war die Anaconda Installation unvollständig.
+A terminal should open in the format `(base) $`. If `(base)` is missing, the
+Anaconda installation was incomplete.
 
-## Conda env erstellen
+## Create Conda Environment
 
-Erstellen Sie ein neues Environment mit Python v3.10
+Create a new environment with Python v3.10:
 
 ```shell
 (base) $ conda create -n autogen python=3.10
 ```
 
-Activieren Sie das Environment
+Activate the environment:
 
 ```shell
 (base) $ conda activate autogen
 (autogen) $ ..
 ```
 
-## AutoGenStudio installieren und starten
+## Install and Start AutoGenStudio
 
-Installieren Sie `autogenstudio` in das neue Environment.
+Install `autogenstudio` in the new environment:
 
 ```shell
 (autogen) $ pip install autogenstudio
 ```
 
-Starten Sie den Autogenstudio Server (mit Beispiel-Output). Im ersten Schritt
-wird der Open AI API Key in die Shell-Umgebung geladen.
+Start the AutoGenStudio server (example output included). First, load the
+OpenAI API key into the shell environment:
 
 ```shell
-(autogen) $ export OPENAI_API_KEY=<den API Key einfuegen>
+(autogen) $ export OPENAI_API_KEY=<insert API key>
 (autogen) $ autogenstudio ui
 flaml.automl is not available. Please install flaml[automl] to enable AutoML functionalities.
 2024-10-02 10:02:39.841 | INFO     | autogenstudio.utils.utils:get_db_uri:253 - Using database URI: sqlite:////home/myuser/.autogenstudio/database.sqlite
@@ -70,8 +69,8 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
 ```
 
-Nachdem der Server läuft können Sie in ihrem Lieblingsbrowser die angegebene
-URL anwählen (im Beispiel `http://127.0.0.1:8081`), oder klicken Sie
-[hier](http://localhost:8081).
+Once the server is running, you can access the provided URL (in the example,
+`http://127.0.0.1:8081`) in your favorite browser, or click
+[here](http://localhost:8081).
 
 ![Screenshot of start page](autogenstudio-startpage.png)
