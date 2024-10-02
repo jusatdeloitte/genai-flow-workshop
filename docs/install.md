@@ -4,6 +4,11 @@ Bedingung für eine Workshop-Teilnahme ist eine funktionierende Installation des
 Programms
 [AutoGenStudio](https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio).
 Dies wird zur systemischen Abgrenzung in ein separates anaconda env installiert.
+Hierzu unternehmen Sie folgende Schritte.
+
+1. Anaconda installieren.
+2. Im einem Terminal ein Anaconda environment erstellen.
+3. AutoGenStudio installieren und starten.
 
 ## Anaconda installieren
 
@@ -15,7 +20,7 @@ Um zu überprüfen, dass die Installation erfolg hatte, folgen Sie
 [dieser](https://docs.anaconda.com/anaconda/install/verify-install/)
 Beschreibung.
 
-## Terminal öffnen
+## Terminal öffnen (nur macOS)
 
 Öffnen Sie zunächst ein Terminal:
 
@@ -40,7 +45,7 @@ Activieren Sie das Environment
 (autogen) $ ..
 ```
 
-## AutoGenStudio installieren
+## AutoGenStudio installieren und starten
 
 Installieren Sie `autogenstudio` in das neue Environment.
 
