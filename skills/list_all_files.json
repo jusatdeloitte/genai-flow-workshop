@@ -1,0 +1,5 @@
+{
+  "name": "list_all_files",
+  "content": "def list_all_files(directory_path: str) -> List[str]:\n    \"\"\"\n    Lists all files in a directory and its subdirectories.\n\n    Args:\n        directory_path (str): The path of the directory to list.\n\n    Returns:\n        List[str]: A list of paths of all files found.\n    \"\"\"\n    file_paths = []\n    try:\n        for root, dirs, files in os.walk(directory_path):\n            for file in files:\n                file_paths.append(os.path.join(root, file))\n    except Exception as e:\n        print(f\"Error listing all files: {e}\")\n    return file_paths\n\n# Example usage:\n# print(list_all_files(\".\"))\n",
+  "description": "returns a list of all files"
+}
