@@ -1,12 +1,11 @@
 {
   "type": "userproxy",
   "config": {
-    "name": "userproxy",
+    "name": "code_executor",
     "llm_config": false,
     "human_input_mode": "NEVER",
     "max_consecutive_auto_reply": 5,
     "system_message": "You are a helpful assistant.",
-    "is_termination_msg": null,
     "code_execution_config": {
       "work_dir": "coding",
       "use_docker": false
