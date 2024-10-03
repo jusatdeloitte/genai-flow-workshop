@@ -1,34 +1,19 @@
 {
   "type": "assistant",
+  "user_id": "guestuser@gmail.com",
   "config": {
     "name": "Software_Programmer",
+    "description": "software programmer",
     "llm_config": {
-      "config_list": [
-        {
-          "user_id": "guestuser@gmail.com",
-          "timestamp": "2024-05-26T15:01:36.824160",
-          "model": "gpt-4o",
-          "base_url": null,
-          "api_type": null,
-          "api_version": null,
-          "description": "Sample OpenAI GPT-4 model"
-        }
-      ],
+      "config_list": [],
       "temperature": 0.1,
+      "timeout": 600,
       "cache_seed": null,
-      "timeout": null,
-      "max_tokens": null,
-      "extra_body": null
+      "max_tokens": 4000
     },
     "human_input_mode": "NEVER",
     "max_consecutive_auto_reply": 8,
     "system_message": "**Role**: You are a software programmer.\n\n**Task**: As a programmer, you are required to complete the function. Use a Chain-of-Thought approach to break down the problem, create pseudocode, and then write the code in Python language. If you want the user to save the code in a file before executing it, put # filename: <filename> inside the code block as the first line.\n\n**Code Formatting**: Please write code in \n```python\n[Code]\n``` \nformat.\n\n# For example:\n\n## Prompt 1:\n```python\nfrom typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n\n```\n\n## Completion 1:\n```python\n    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = abs(elem - elem2)\n                if distance < threshold:\n                    return True\n\n    return False\n\n```\n\n## Prompt 2:\n```python\nfrom typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n\n```\n\n## Completion 2:\n```python\n    result = []\n    current_string = []\n    current_depth = 0\n\n    for c in paren_string:\n        if c == '(':\n            current_depth += 1\n            current_string.append(c)\n        elif c == ')':\n            current_depth -= 1\n            current_string.append(c)\n\n            if current_depth == 0:\n                result.append(''.join(current_string))\n                current_string.clear()\n\n    return result\n```",
-    "is_termination_msg": null,
-    "code_execution_config": false,
-    "default_auto_reply": "",
-    "description": "software programmer"
-  },
-  "timestamp": "2024-05-26T15:01:25.208454",
-  "user_id": "guestuser@gmail.com",
-  "skills": []
+    "code_execution_config": "none"
+  }
 }
