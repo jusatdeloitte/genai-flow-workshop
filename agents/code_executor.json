@@ -1,19 +1,16 @@
 {
+  "user_id": "guestuser@gmail.com",
+  "version": "0.0.1",
   "type": "userproxy",
   "config": {
     "name": "code_executor",
-    "llm_config": false,
     "human_input_mode": "NEVER",
-    "max_consecutive_auto_reply": 5,
+    "description": "User Proxy",
+    "max_consecutive_auto_reply": 25,
     "system_message": "You are a helpful assistant.",
-    "code_execution_config": {
-      "work_dir": "coding",
-      "use_docker": false
-    },
     "default_auto_reply": "TERMINATE",
-    "description": "A user proxy agent that executes code."
+    "llm_config": false,
+    "code_execution_config": "local"
   },
-  "timestamp": "2024-05-26T15:00:00.643364",
-  "user_id": "default",
-  "skills": []
+  "task_instruction": null
 }
