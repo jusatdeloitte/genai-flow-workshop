@@ -10,6 +10,7 @@ isolation. Follow these steps:
 2. Create an Anaconda environment in a terminal.
 3. Install and start AutoGenStudio.
 
+
 ## Install Anaconda
 
 - Installation for [macOS](https://docs.anaconda.com/anaconda/install/mac-os/)
@@ -46,10 +47,11 @@ Activate the environment:
 
 ## 3. Install and Start AutoGenStudio
 
-3.1. Install `autogenstudio` in the new environment:
+3.1. Install/Upgrade `autogenstudio` in the new environment:
 
 ```shell
 (autogen) $ pip install autogenstudio
+(autogen) $ pip install --upgrade autogenstudio
 ```
 
 3.2. Load the OpenAI API key into the shell environment:
@@ -79,10 +81,3 @@ INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
 
 ![Screenshot of start page](autogenstudio-startpage.png)
 
-## 4. Update AutoGenStudio
-
-4.1 Update AutogenStudio:
-
-```shell
-(autogen) $ pip install --upgrade autogenstudio
-```
