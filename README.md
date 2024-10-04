@@ -66,3 +66,8 @@ There are two types of workflows to choose from:
    where ($n>2$) a GroupChat Manager decides to whom a message is directed.
 
 2. **Sequential.** A sequence of agents exchanges messages in a specific order.
+
+
+## Useful links
+- [Autogen Documentation](https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent/)
+- [System Prompt Generator](https://chatgpt.com/g/g-8qIKJ1ORT-system-prompt-generator)
