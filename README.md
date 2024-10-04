@@ -1,8 +1,7 @@
 # Multi Agent System with AutoGen Studio
 
 Welcome to the AutoGen workshop. This repository serves as a supporting guide
-and contains a series of application examples that we will examine together
-during the workshop.
+and contains some assets that we will examine together during the workshop.
 
 First, install AutoGen Studio on your PC. AutoGen Studio is a web server that
 you can operate locally through your browser. The studio allows you to create
@@ -13,9 +12,9 @@ can load into the studio.
 
 ## Quick Start Guide
 
-First, follow the [installation instructions](docs/install.md) to get started
-AutoGen Studio. Once the platform is running you can get started by running
-with [this](docs/tetris-config.md) step-by-step guide to building Tetris.
+Follow the [installation instructions](docs/install.md) to get started AutoGen
+Studio. Once the platform is running you can walk through
+[this](docs/tetris-config.md) step-by-step guide to building Tetris.
 
 ## Tour of AutoGen Studio
 
