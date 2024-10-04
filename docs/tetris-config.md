@@ -1,5 +1,7 @@
 # Tetris Configuration
 
+For your convenience: delete all models, skills, and agents that were created by default. This ensures a cleaner and more streamlined workspace for custom setups.
+
 1. Upload Skills
     - skills/list_all_files.json
     - skills/list_directory.json
