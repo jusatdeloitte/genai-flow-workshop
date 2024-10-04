@@ -11,15 +11,11 @@ and manage teams of AI agents.
 The repository contains example team configurations in JSON format, which you
 can load into the studio.
 
-## Installation Guide
+## Quick Start Guide
 
-First, follow the [installation instructions](docs/install.md).
-
-Next, you can load the team configurations into AutoGen Studio.
-
-## Team Configurations
-
-- [Software Team](teams/software_team.json) consisting of Software Programmer, Software Critic, Groupchat Assistant
+First, follow the [installation instructions](docs/install.md) to get started
+AutoGen Studio. Once the platform is running you can get started by running
+with [this](docs/tetris-config.md) step-by-step guide to building Tetris.
 
 ## Tour of AutoGen Studio
 
