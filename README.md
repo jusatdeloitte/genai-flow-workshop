@@ -70,4 +70,5 @@ There are two types of workflows to choose from:
 
 ## Useful links
 - [Autogen Documentation](https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent/)
-- [System Prompt Generator](https://chatgpt.com/g/g-8qIKJ1ORT-system-prompt-generator)
+- [System Prompt Generator:](https://chatgpt.com/g/g-8qIKJ1ORT-system-prompt-generator) let ChatGPT create perfectly formatted prompt for your agent based on best-practices
+- [The Tokenizer Playground:](https://huggingface.co/spaces/Xenova/the-tokenizer-playground) count number of tokens in your prompts
