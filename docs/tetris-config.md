@@ -1,7 +1,9 @@
 # Tetris Configuration
 
 We recommend that you start by deleting all workflows, agents, models, and
-skills that were created by default.
+skills, that were created by default. To upload configuration from a JSON file, click on the three dots (...) next to the "+ New Skill" button. 
+
+*Note: You don't need to make any changes to configuration before clickling on "Create".*
 
 1. Upload Skills
     - skills/list_all_files.json
@@ -34,8 +36,10 @@ skills that were created by default.
     - "Software_critic"
     - "Software_Programmer"
 
-7. Create workflow
-    - As sender select "sender"
-    - As receiver select "manager"
-
-8. Prompt the workflow with "Create Tetris"
+7. Create an **autonomous** workflow
+    - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
+    - After clicking on "Create Workflow", a new tab "Agents" will be available
+    - As sender select "sender" in the "Agents" tab
+    - As receiver select "manager" in the "Agents" tab
+    
+8. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
