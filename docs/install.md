@@ -10,8 +10,13 @@ isolation. Follow these steps:
 2. Create an Anaconda environment in a terminal.
 3. Install and start AutoGenStudio.
 
-
 ## Install Anaconda
+
+Download the installer for Anaconda
+[here](https://www.anaconda.com/download/success) and follow the instructions.
+
+You can also find detailed install instructions for each operating system under
+the following links:
 
 - Installation for [macOS](https://docs.anaconda.com/anaconda/install/mac-os/)
 - Installation for [Linux](https://docs.anaconda.com/anaconda/install/linux/)
@@ -75,8 +80,8 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
 ```
 
-3.4. Once the server is running, you can access the provided URL (in the example,
-`http://127.0.0.1:8081`) in your favorite browser, or click
+3.4. Once the server is running, you can access the provided URL (in the
+example, `http://127.0.0.1:8081`) in your favorite browser, or click
 [here](http://localhost:8081).
 
 ![Screenshot of start page](autogenstudio-startpage.png)
