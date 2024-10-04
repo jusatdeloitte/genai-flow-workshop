@@ -78,3 +78,11 @@ INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
 [here](http://localhost:8081).
 
 ![Screenshot of start page](autogenstudio-startpage.png)
+
+## 4. Update AutoGenStudio
+
+4.1 Update AutogenStudio:
+
+```shell
+(autogen) $ pip install --upgrade autogenstudio
+```
