@@ -5,7 +5,7 @@
   "config": {
     "name": "code_executor",
     "human_input_mode": "NEVER",
-    "description": "User Proxy",
+    "description": "executor",
     "max_consecutive_auto_reply": 25,
     "system_message": "You are a helpful assistant.",
     "default_auto_reply": "TERMINATE",

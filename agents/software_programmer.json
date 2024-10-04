@@ -3,7 +3,7 @@
   "user_id": "guestuser@gmail.com",
   "config": {
     "name": "Software_Programmer",
-    "description": "software programmer",
+    "description": "programmer",
     "llm_config": {
       "config_list": [],
       "temperature": 0.1,
