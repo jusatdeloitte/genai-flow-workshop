@@ -37,13 +37,13 @@ Anaconda installation was incomplete.
 
 ## 2. Create Conda Environment
 
-Create a new environment with Python v3.10:
+2.1. Create a new environment with Python v3.10:
 
 ```shell
 (base) $ conda create -n autogen python=3.10
 ```
 
-Activate the environment:
+2.2. Activate the environment:
 
 ```shell
 (base) $ conda activate autogen
@@ -65,10 +65,10 @@ Activate the environment:
 (autogen) $ export OPENAI_API_KEY=<insert API key>
 ```
 
-3.3. Start the AutoGenStudio server (example output included). 
+3.3. Start the AutoGenStudio server by running `autogenstudio ui --appdir <insert working dir path>` (see example input and output below): 
 
 ```shell
-(autogen) $ autogenstudio ui
+(autogen) $ autogenstudio ui --appdir ./workshop/
 flaml.automl is not available. Please install flaml[automl] to enable AutoML functionalities.
 2024-10-02 10:02:39.841 | INFO     | autogenstudio.utils.utils:get_db_uri:253 - Using database URI: sqlite:////home/myuser/.autogenstudio/database.sqlite
 2024-10-02 10:02:39.841 | INFO     | autogenstudio.utils.utils:init_app_folders:288 - Initialized application data folder: /home/myuser/.autogenstudio
