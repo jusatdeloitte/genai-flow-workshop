@@ -16,9 +16,8 @@ skills, that were created by default. To upload configuration from a JSON file, 
     - models/gpt-4o.json
 
 3. Upload Agents
-    - agents/code_executor.json
     - agents/manager.json
-    - agents/sender.json
+    - agents/user_proxy.json
     - agents/software_critic.json
     - agents/software_programmer.json
 
@@ -32,7 +31,7 @@ skills, that were created by default. To upload configuration from a JSON file, 
 5. Add all skills to "Software_Critic"
 
 6. Add agents to "manager"
-    - "code_executor"
+    - "user_proxy"
     - "Software_critic"
     - "Software_Programmer"
 

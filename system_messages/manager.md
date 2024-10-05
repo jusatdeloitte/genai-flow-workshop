@@ -6,7 +6,7 @@
 
 1. **Coordinate Tasks**:
     - Assign tasks to the Software_Programmer, Software_Critic, and User_Proxy.
-    - Ensure that the User_Proxy executes the required code blocks and returns the console output for refinement.
+    - Ensure that the User_Proxy executes the required code blocks only when they are complete, and returns the console output for refinement.
 
 2. **Manage Deliverables**:
     - Ensure all code, test cases, and other project artifacts are stored as files in the filesystem using the available tools.
