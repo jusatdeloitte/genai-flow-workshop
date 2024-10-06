@@ -1,9 +1,9 @@
 {
   "user_id": "guestuser@gmail.com",
   "version": "0.0.1",
-  "model": "gpt-3.5-turbo-0125",
+  "model": "gpt-4o-mini-2024-07-18",
   "base_url": null,
   "api_type": "open_ai",
   "api_version": null,
-  "description": "OpenAI GPT-3.5 turbo"
+  "description": "OpenAI GPT-4o-mini"
 }
