@@ -7,6 +7,7 @@ skills, that were created by default. To upload configuration from a JSON file, 
 
 1. Upload Models
     - models/gpt-4o-mini-2024-07-18.json
+    - models/gpt-4o-2024-08-06
 
 2. Upload Agents
     - agents/manager.json
