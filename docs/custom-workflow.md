@@ -11,7 +11,7 @@ Note, that if you want agents to write and execute *any* code, you don't have to
 ## 2. **Agents**
 
 2.1. **Configure agents**: For an autonomous chat, you'll need to create multiple agents, including:
-1) group_chat_manager (manages the conversation and it's length with [max_turns](https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent/#:~:text=Default%20is%20None.-,max_turns,-int%20or%20None) parameter. **Tip:** add a list of `Available Agents and Tools` to the system_message to achieve better results)
+1) groupchat_manager (manages the conversation and it's length with [max_turns](https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent/#:~:text=Default%20is%20None.-,max_turns,-int%20or%20None) parameter. **Tip:** add a list of `Available Agents and Tools` to the system_message to achieve better results)
 2) user_proxy (initiates the conversation, doesn't need any modifications, just use [the generic one we've prepared](../templates/user_proxy.json))
 3) the ones who're engaging in a conversation 
 
@@ -36,13 +36,13 @@ System message will set a **role** and a **task** for the agent. To create a sys
 
 2.3. **Configure agents skills**: Depending on your workflow, add skills to the agents.
 
-2.4. **Add all the agents**, that you want to participate in the conversation, to "group_chat_manager" (including "user_proxy").
+2.4. **Add all the agents**, that you want to participate in the conversation, to "groupchat_manager" (including "user_proxy").
 
 
 ## 3. Workflow
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
     - As sender select "user_proxy" in the "Agents" tab
-    - As receiver select "group_chat_manager" in the "Agents" tab
+    - As receiver select "groupchat_manager" in the "Agents" tab
     
 3.1. Click on "Test workflow" and start prompting *(chat won't be saved)* or move to the Playground *(chat will be saved)*

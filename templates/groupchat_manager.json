@@ -3,13 +3,13 @@
   "user_id": "guestuser@gmail.com",
   "version": "0.0.1",
   "config": {
-    "name": "manager",
+    "name": "groupchat_manager",
     "human_input_mode": "NEVER",
     "max_consecutive_auto_reply": 10,
     "system_message": "",
     "code_execution_config": "none",
     "default_auto_reply": "TERMINATE",
-    "description": "Groupchat Assistent",
+    "description": "Groupchat Manager",
     "llm_config": {
       "config_list": [],
       "temperature": 0.1,
@@ -17,7 +17,7 @@
       "cache_seed": null,
       "max_tokens": null
     },
-    "admin_name": "groupchat_assistant",
+    "admin_name": "groupchat_manager",
     "messages": [],
     "max_round": 10,
     "speaker_selection_method": "auto",
