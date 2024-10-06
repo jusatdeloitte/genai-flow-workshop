@@ -1,20 +1,25 @@
 # Multi Agent System with AutoGen Studio
 
-Welcome to the AutoGen workshop. This repository serves as a supporting guide
-and contains some assets that we will examine together during the workshop.
+Welcome to the AutoGen workshop. This repository serves as a supporting guide and contains some assets that we will examine together during the workshop.
 
-First, install AutoGen Studio on your PC. AutoGen Studio is a web server that
-you can operate locally through your browser. The studio allows you to create
-and manage teams of AI agents.
+First, install AutoGen Studio on your PC. AutoGen Studio is a web server that you can operate locally through your browser. The studio allows you to create and manage teams of AI agents.
 
-The repository contains example team configurations in JSON format, which you
-can load into the studio.
+The repository contains example team configurations in JSON format, which you can load into the studio.
+
+## Workshop Agenda
+
+- [x] Introduction to Agents
+- [ ] Group Division for hands-on
+- [ ] Hands-on: Install AutoGen
+- [ ] Hands-on: Setup AutoGen
+- [ ] Hands-on: Create Tetris
+- [ ] Hands-on: Custom Workflow
 
 ## Quick Start Guide
 
 Follow the [installation instructions](docs/install.md) to get started AutoGen
 Studio. Once the platform is running you can walk through
-[this](docs/tetris-config.md) step-by-step guide to building Tetris.
+[this](docs/tetris-config.md) step-by-step guide to building Tetris. Once you have tetris up and running, you can create a [custom workflow](docs/custom-workflow.md).
 
 ## Tour of AutoGen Studio
 
@@ -62,8 +67,7 @@ agents and establishes communication relationships between them.
 
 There are two types of workflows to choose from:
 
-1. **Autonomous (Chat).** A group of agents participates in a message exchange,
-   where ($n>2$) a GroupChat Manager decides to whom a message is directed.
+1. **Autonomous (Chat).** A group of agents participates in a message exchange, where ($n>2$) a GroupChat Manager decides to whom a message is directed.
 
 2. **Sequential.** A sequence of agents exchanges messages in a specific order.
 
