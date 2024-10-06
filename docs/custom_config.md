@@ -10,15 +10,26 @@ Note, that if you want agents to write and execute *any* code, you don't have to
 
 ## 2. **Agents**
 
-You'll need to create multiple agents, including a group_chat_manager, a user_proxy and the ones who're engaging in a conversation. 
+For an autonomous chat, you'll need to create multiple agents, including:
+1) group_chat_manager (manages the conversation and it's length with [max_turns](https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent/#:~:text=Default%20is%20None.-,max_turns,-int%20or%20None) parameter, use this template)
+2) user_proxy (initiates the conversation, doesn't need any modifications, just use [the generic one we've prepared](../templates/user_proxy.json))
+3) the ones who're engaging in a conversation 
 
-To create a system_message that follows prompting best-practices, we recommend using the [System Prompt Generator tool](https://chatgpt.com/g/g-8qIKJ1ORT-system-prompt-generator). Explain in natural language what the agent is supposed to do, and ChatGPT will craft a perfectly formatted prompt for your agent. Then, you can use the prompt below to format your system_message for a JSON file:
+Start by creating a system message which will set a role and a task for the agent. To create a system_message that follows prompting best-practices, we recommend using the [System Prompt Generator tool](https://chatgpt.com/g/g-8qIKJ1ORT-system-prompt-generator). Explain in natural language what the agent is supposed to do, and ChatGPT will craft a perfectly formatted prompt for your agent. Then, you can use the prompt below to format your system_message for a JSON file with ChatGPT or simply paste your text *without any prompts* into [this pre-built agent](https://chatgpt.com/g/g-2sLr73LCL-json-formatter):
 `Format this text so I can paste it into a JSON entry "system_message": "", using /n for for line breaks and correct code formatting elements. Do not create multiple entries, the only entry I need is system_message and it includes all the text below: <your system_message>`
 
-If you notice that the behaviour of your agent doesn't reflect your intentions, try debugging your prompt by pasting it into [ChatGPT](https://chatgpt.com/), followed by the task, e.g. "create tetris". This way you'll avoid the hustle of importing new configurations to Autogen and waiting tha agent conversation to be over.
+If you notice that the behaviour of your agent doesn't reflect your intentions, try debugging your prompt by pasting it into [ChatGPT](https://chatgpt.com/), followed by the task, e.g. "create tetris". This way you'll avoid the hustle of importing new configurations to Autogen and waiting the multi agent conversation to be over.
 
 
-2.1. **Configure agent models**: To make your workflow both effective and cost-efficient, select stronger models (gpt-4o) for complex tasks requiring precision (writing code, math) and weaker models (gpt-3.5-turbo) for simpler tasks such as e.g. managing the conversation or checking spelling.
+2.1. **Configure agent models**: To make your workflow both effective and cost-efficient, select stronger models (gpt-4o/gpt-4o-mini) for complex tasks requiring precision (writing code, math) and weaker models (gpt-3.5-turbo) for simpler tasks such as e.g. managing the conversation or checking spelling. 
+
+| Model Name              | Ranking | Input Token Cost (per 1M) | Output Token Cost (per 1M) | Cost Efficiency Compared to Rest |
+|-------------------------|---------|---------------------------|----------------------------|-----------------------------------|
+| gpt-3.5-turbo-0125       | #79     | $0.50                      | $1.50                       | Medium (Balanced cost)            |
+| gpt-4o-mini-2024-07-18   | #5      | $0.150                     | $0.600                      | High (Most cost-effective)        |
+| gpt-4o-2024-08-06        | #8      | $2.50                      | $10.00                      | Low (Expensive)                   |
+| gpt-4o-2024-05-13        | #6      | $5.00                      | $15.00                      | Very Low (Most expensive)         |
+
 
 2.2. **Configure agents skills**: tbu
 
