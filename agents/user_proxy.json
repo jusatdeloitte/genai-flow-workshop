@@ -6,7 +6,7 @@
     "name": "User_Proxy",
     "human_input_mode": "NEVER",
     "description": "User_Proxy",
-    "max_consecutive_auto_reply": 3,
+    "max_consecutive_auto_reply": 1,
     "system_message": "You are a helpful assistant.",
     "default_auto_reply": "TERMINATE",
     "llm_config": false,
