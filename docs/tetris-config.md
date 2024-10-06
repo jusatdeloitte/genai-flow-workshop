@@ -5,38 +5,30 @@ skills, that were created by default. To upload configuration from a JSON file, 
 
 *Note: You don't need to make any changes to configuration before clickling on "Create". To upload resources, you can either proceed manually or run [hydrate.py script](../hydrate.py) to load it all automatically.*
 
-1. Upload Skills
-    - skills/list_all_files.json
-    - skills/list_directory.json
-    - skills/read_file_content.json
-    - skills/search_in_file.json
-
-2. Upload Models
+1. Upload Models
     - models/gpt-4o-mini-2024-07-18.json
 
-3. Upload Agents
+2. Upload Agents
     - agents/manager.json
     - agents/user_proxy.json
     - agents/software_critic.json
     - agents/software_programmer.json
 
-4. Configure agent models
+3. Configure agent models
     - select "gpt-4o-mini-2024-07-18" for
         * "manager"
         * "Software_Programmer"
         * "Software_Critic"
 
-5. Add all skills to "Software_Critic"
-
-6. Add agents to "manager"
-    - "user_proxy"
-    - "Software_critic"
+4. Add agents to "manager"
+    - "User_Proxy"
+    - "Software_Critic"
     - "Software_Programmer"
 
-7. Create an **autonomous** workflow
+5. Create an **autonomous** workflow
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
     - As sender select "User_Proxy" in the "Agents" tab
     - As receiver select "manager" in the "Agents" tab
     
-8. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
+6. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
