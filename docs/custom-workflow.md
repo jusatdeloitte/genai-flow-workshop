@@ -24,7 +24,7 @@ System message will set a **role** and a **task** for the agent. To create a sys
 **Tip:** If you notice that the behaviour of your agent doesn't reflect your intentions, try debugging your prompt by pasting it into [ChatGPT](https://chatgpt.com/), followed by the task, e.g. "create tetris". This way you'll avoid the hustle of importing new configurations to Autogen and waiting the multi agent conversation to be over.
 
 
-2.2. **Configure agent models**: To make your workflow both effective and cost-efficient, select stronger models (gpt-4o/gpt-4o-mini) for complex tasks requiring precision (writing code, math) and weaker models (gpt-3.5-turbo) for simpler tasks such as e.g. managing the conversation or checking spelling. 
+2.2. **Configure agent models**: To make your workflow both effective and cost-efficient, select stronger models for complex tasks requiring precision (writing code, math) and weaker models for simpler tasks such as e.g. managing the conversation or checking spelling. 
 
 | Model Name              | Ranking | Input Token Cost (per 1M) | Output Token Cost (per 1M) | Cost Efficiency Compared to Rest |
 |-------------------------|---------|---------------------------|----------------------------|-----------------------------------|
@@ -42,7 +42,7 @@ System message will set a **role** and a **task** for the agent. To create a sys
 ## 3. Workflow
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
-    - As sender select "sender" in the "Agents" tab
+    - As sender select "user_proxy" in the "Agents" tab
     - As receiver select "group_chat_manager" in the "Agents" tab
     
 3.1. Click on "Test workflow" and start prompting *(chat won't be saved)* or move to the Playground *(chat will be saved)*

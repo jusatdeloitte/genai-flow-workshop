@@ -36,7 +36,7 @@ skills, that were created by default. To upload configuration from a JSON file, 
 7. Create an **autonomous** workflow
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
-    - As sender select "sender" in the "Agents" tab
+    - As sender select "User_Proxy" in the "Agents" tab
     - As receiver select "manager" in the "Agents" tab
     
 8. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
