@@ -17,6 +17,7 @@ skills, that were created by default. To upload configuration from a JSON file, 
 3. Configure agent models
     - select "gpt-4o-mini-2024-07-18" for
         * "manager"
+    - select "gpt-4o-2024-08-06" for
         * "Software_Programmer"
         * "Software_Critic"
 
