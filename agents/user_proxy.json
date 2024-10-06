@@ -11,7 +11,7 @@
     "default_auto_reply": "TERMINATE",
     "llm_config": false,
     "code_execution_config": "local",
-    "timeout": 60
+    "timeout": 30
   },
   "task_instruction": null
 }
