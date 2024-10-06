@@ -12,7 +12,6 @@
     "llm_config": false,
     "code_execution_config": "local",
     "timeout": 30
-
   },
   "task_instruction": null
 }
