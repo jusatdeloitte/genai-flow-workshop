@@ -12,8 +12,7 @@ skills, that were created by default. To upload configuration from a JSON file, 
     - skills/search_in_file.json
 
 2. Upload Models
-    - models/gpt-3.5-turbo.json
-    - models/gpt-4o.json
+    - models/gpt-4o-mini-2024-07-18.json
 
 3. Upload Agents
     - agents/manager.json
@@ -22,11 +21,10 @@ skills, that were created by default. To upload configuration from a JSON file, 
     - agents/software_programmer.json
 
 4. Configure agent models
-    - select "gpt-3.5-turbo" for
+    - select "gpt-4o-mini-2024-07-18" for
         * "manager"
-        * "Software_Critic"
-    - select "gpt-4o" for
         * "Software_Programmer"
+        * "Software_Critic"
 
 5. Add all skills to "Software_Critic"
 
