@@ -1,0 +1,16 @@
+{
+  "user_id": "guestuser@gmail.com",
+  "version": "0.0.1",
+  "type": "userproxy",
+  "config": {
+    "name": "User_Proxy",
+    "human_input_mode": "NEVER",
+    "description": "User_Proxy",
+    "max_consecutive_auto_reply": 10,
+    "system_message": "You are a helpful assistant.",
+    "default_auto_reply": "TERMINATE",
+    "llm_config": false,
+    "code_execution_config": "local"
+  },
+  "task_instruction": null
+}
