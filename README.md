@@ -6,7 +6,7 @@ First, install AutoGen Studio on your PC. AutoGen Studio is a web server that yo
 
 The repository contains example team configurations in JSON format, which you can load into the studio.
 
-## Workshop Agenda
+## Quickstart Checklist
 
 - [x] Introduction to Agents
 - [ ] Group Division for hands-on
@@ -15,11 +15,10 @@ The repository contains example team configurations in JSON format, which you ca
 - [ ] Hands-on: Create Tetris
 - [ ] Hands-on: Custom Workflow
 
-## Quick Start Guide
-
 Follow the [installation instructions](docs/install.md) to get started AutoGen
 Studio. Once the platform is running you can walk through
 [this](docs/tetris-config.md) step-by-step guide to building Tetris. Once you have tetris up and running, you can create a [custom workflow](docs/custom-workflow.md).
+
 
 ## Tour of AutoGen Studio
 
