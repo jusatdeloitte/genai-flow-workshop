@@ -20,7 +20,6 @@
     "admin_name": "manager",
     "messages": [],
     "max_round": 15,
-    "is_termination_msg": null,
     "speaker_selection_method": "auto",
     "allow_repeat_speaker": true
   },
