@@ -16,12 +16,13 @@ We recommend that you start by deleting all workflows, agents, models, and skill
 
 3. Configure agent models
     - select "gpt-4o-mini-2024-07-18" for
-        * "manager"
+        * "Manager"
+        * "User_Proxy"
     - select "gpt-4o-2024-08-06" for
         * "Software_Programmer"
         * "Software_Critic"
 
-4. Add agents to "manager"
+4. Add agents to "Manager"
     - "User_Proxy"
     - "Software_Critic"
     - "Software_Programmer"
@@ -30,6 +31,6 @@ We recommend that you start by deleting all workflows, agents, models, and skill
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
     - As sender select "User_Proxy" in the "Agents" tab
-    - As receiver select "manager" in the "Agents" tab
+    - As receiver select "Manager" in the "Agents" tab
     
 6. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
