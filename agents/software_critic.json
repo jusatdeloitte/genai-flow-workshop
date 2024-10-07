@@ -1,8 +1,8 @@
 {
   "type": "assistant",
   "config": {
-    "name": "software_critic",
-    "description": "software_critic",
+    "name": "Software_Critic",
+    "description": "Software_Critic",
     "llm_config": {
       "config_list": [],
       "temperature": 0.1,

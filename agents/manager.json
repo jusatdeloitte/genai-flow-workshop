@@ -17,7 +17,7 @@
       "cache_seed": null,
       "max_tokens": null
     },
-    "admin_name": "manager",
+    "admin_name": "groupchat_assistant",
     "messages": [],
     "max_round": 15,
     "speaker_selection_method": "auto",
