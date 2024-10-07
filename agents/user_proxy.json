@@ -5,7 +5,7 @@
   "config": {
     "name": "User_Proxy",
     "human_input_mode": "NEVER",
-    "description": "Software_Tester",
+    "description": "Can execute code and return the output",
     "max_consecutive_auto_reply": 3,
     "system_message": "A helpful assistant, who can execute code.",
     "default_auto_reply": null,
