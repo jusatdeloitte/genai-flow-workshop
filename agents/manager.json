@@ -1,7 +1,7 @@
 {
-  "type": "groupchat",
   "user_id": "guestuser@gmail.com",
   "version": "0.0.1",
+  "type": "groupchat",
   "config": {
     "name": "manager",
     "human_input_mode": "NEVER",
@@ -17,7 +17,7 @@
       "cache_seed": null,
       "max_tokens": null
     },
-    "admin_name": "groupchat_assistant",
+    "admin_name": "manager",
     "messages": [],
     "max_round": 15,
     "speaker_selection_method": "auto",

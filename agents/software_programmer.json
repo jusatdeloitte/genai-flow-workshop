@@ -2,8 +2,8 @@
   "type": "assistant",
   "user_id": "guestuser@gmail.com",
   "config": {
-    "name": "Software_Programmer",
-    "description": "programmer",
+    "name": "software_programmer",
+    "description": "software_programmer",
     "llm_config": {
       "config_list": [],
       "temperature": 0.1,
