@@ -7,7 +7,7 @@
     "human_input_mode": "NEVER",
     "description": "Software_Tester",
     "max_consecutive_auto_reply": 3,
-    "system_message": "You are a helpful assistant. You can execute code.",
+    "system_message": "A helpful assistant, who can execute code.",
     "default_auto_reply": null,
     "llm_config": false,
     "max_tokens": 4000
