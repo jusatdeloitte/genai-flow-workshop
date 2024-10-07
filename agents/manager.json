@@ -20,7 +20,7 @@
     "admin_name": "Groupchat_Assistant",
     "messages": [],
     "max_round": 15,
-    "speaker_selection_method": "auto",
+    "speaker_selection_method": "round_robin",
     "allow_repeat_speaker": true
   },
   "task_instruction": null
