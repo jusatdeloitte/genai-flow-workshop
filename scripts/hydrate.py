@@ -22,6 +22,8 @@ def hydrate(obj: str):
     print(f"hydrating {obj}..")
     for folder, _, files in walk(f'./{obj}'):
         for filepath in map(lambda f: path.join(folder, f), files):
+            if '.DS_Store' in filepath:
+                continue
             do_hydrate(obj, filepath)
 
     print(f"done hydrating {obj}!")

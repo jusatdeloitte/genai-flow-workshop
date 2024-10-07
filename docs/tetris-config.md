@@ -1,45 +1,36 @@
 # Tetris Configuration
 
-We recommend that you start by deleting all workflows, agents, models, and
-skills, that were created by default. To upload configuration from a JSON file, click on the three dots (...) next to the "+ New Skill" button. 
+We recommend that you start by deleting all workflows, agents, models, and skills, that were created by default. To upload configuration from a JSON file, click on the three dots (...) next to the "+ New Skill" button. 
 
-*Note: You don't need to make any changes to configuration before clickling on "Create".*
+*Note: You don't need to make any changes to configuration before clickling on "Create". To upload resources, you can either proceed manually or run [hydrate.py script](../scripts/hydrate.py) to load it all automatically.*
 
-1. Upload Skills
-    - skills/list_all_files.json
-    - skills/list_directory.json
-    - skills/read_file_content.json
-    - skills/search_in_file.json
+1. Upload Models
+    - models/gpt-4o-mini-2024-07-18.json
+    - models/gpt-4o-2024-08-06
 
-2. Upload Models
-    - models/gpt-3.5-turbo.json
-    - models/gpt-4o.json
-
-3. Upload Agents
-    - agents/code_executor.json
+2. Upload Agents
     - agents/manager.json
-    - agents/sender.json
+    - agents/user_proxy.json
     - agents/software_critic.json
     - agents/software_programmer.json
 
-4. Configure agent models
-    - select "gpt-3.5-turbo" for
-        * "manager"
-        * "Software_Critic"
-    - select "gpt-4o" for
+3. Configure agent models
+    - select "gpt-4o-mini-2024-07-18" for
+        * "Manager"
+        * "User_Proxy"
+    - select "gpt-4o-2024-08-06" for
         * "Software_Programmer"
+        * "Software_Critic"
 
-5. Add all skills to "Software_Critic"
-
-6. Add agents to "manager"
-    - "code_executor"
-    - "Software_critic"
+4. Add agents to "Manager"
+    - "User_Proxy"
+    - "Software_Critic"
     - "Software_Programmer"
 
-7. Create an **autonomous** workflow
+5. Create an **autonomous** workflow
     - Click on "+ New Workflow" >> "Autonomous (chat)" >> "Create Workflow"
     - After clicking on "Create Workflow", a new tab "Agents" will be available
-    - As sender select "sender" in the "Agents" tab
-    - As receiver select "manager" in the "Agents" tab
+    - As sender select "User_Proxy" in the "Agents" tab
+    - As receiver select "Manager" in the "Agents" tab
     
-8. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
+6. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*

@@ -1,0 +1,16 @@
+{
+  "user_id": "guestuser@gmail.com",
+  "version": "0.0.1",
+  "type": "userproxy",
+  "config": {
+    "name": "User_Proxy",
+    "human_input_mode": "NEVER",
+    "description": "Software_Tester",
+    "max_consecutive_auto_reply": 3,
+    "system_message": "A helpful assistant, who can execute code.",
+    "default_auto_reply": null,
+    "llm_config": false,
+    "max_tokens": 4000
+  },
+  "task_instruction": null
+}
