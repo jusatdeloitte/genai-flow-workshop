@@ -46,4 +46,6 @@ System message will set a **role** and a **task** for the agent. To create a sys
     - As receiver select "groupchat_manager" in the "Agents" tab
     
 3.1. Click on "Test workflow" and start prompting *(chat won't be saved)* or move to the Playground *(chat will be saved)*
+
 3.2. If you're experimenting with multiple agents, for example, 7 agents, please make sure to increase the Max Consecutive Auto Reply setting for the Group Chat Assistant.
+
