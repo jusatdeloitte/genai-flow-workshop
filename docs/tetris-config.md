@@ -2,7 +2,7 @@
 
 We recommend that you start by deleting all workflows, agents, models, and skills, that were created by default. To upload configuration from a JSON file, click on the three dots (...) next to the "+ New Skill" button. 
 
-*Note: You don't need to make any changes to configuration before clickling on "Create". To upload resources, you can either proceed manually or run [hydrate.py script](../hydrate.py) to load it all automatically.*
+*Note: You don't need to make any changes to configuration before clickling on "Create". To upload resources, you can either proceed manually or run [hydrate.py script](../scripts/hydrate.py) to load it all automatically.*
 
 1. Upload Models
     - models/gpt-4o-mini-2024-07-18.json
