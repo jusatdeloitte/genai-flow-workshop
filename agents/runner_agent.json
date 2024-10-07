@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "type": "userproxy",
   "config": {
-    "name": "User_Proxy",
+    "name": "Runner_Agent",
     "human_input_mode": "NEVER",
-    "description": "Software_Tester",
-    "max_consecutive_auto_reply": 3,
+    "description": "Runs code and returns the output.",
+    "max_consecutive_auto_reply": 5,
     "system_message": "A helpful assistant, who can execute code.",
     "default_auto_reply": null,
     "llm_config": false,
-    "max_tokens": 4000
+    "max_tokens": 4000,
+    "code_execution_config": "local"
   },
   "task_instruction": null
 }
