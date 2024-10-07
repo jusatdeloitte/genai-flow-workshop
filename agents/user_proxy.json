@@ -7,7 +7,7 @@
     "human_input_mode": "NEVER",
     "description": "User_Proxy",
     "max_consecutive_auto_reply": 1,
-    "system_message": "You are a helpful assistant.",
+    "system_message": "You are a helpful assistant. You can execute code.",
     "default_auto_reply": null,
     "llm_config": false,
     "timeout": 30

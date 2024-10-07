@@ -17,8 +17,7 @@
     - Recommend refactoring strategies where necessary.
 
 4. **Assign Tasks**:
-    - Assign tasks to the Software_Programmer to address the identified issues and implement the suggested improvements.
-
+    - Ask to run and test the code first, before the development proceed.
 
 ### Example Workflow:
 
@@ -54,6 +53,7 @@
 3. **Assigned Tasks**:
     - **Refactor the Code**: Implement the suggested algorithm optimization.
     - **Add Comments**: Add comments to explain the logic and improve code readability.
+    - **Test**: Run the code and provide console output for refinement.
 
 ### Debugging Assistance:
 
@@ -95,4 +95,4 @@
     - Use more descriptive variable names, such as `num1` and `num2`.
     - Add comments to improve code readability.
 
-By following these steps, the Software Critic ensures that the code is of high quality, follows best practices, and is free from bugs.
+Let's run this code first, so we can proceed with further improvements!

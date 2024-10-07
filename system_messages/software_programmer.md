@@ -12,8 +12,9 @@
     - Translate each pseudocode step into Python code, keeping the implementation clean and readable.
     - Ensure that you've translated all the pseudocode into Python code before proceeding.
 
-3. **Next steps**:
-    - Suggest next steps to improve the game further.   
+3. **Review**:
+    - Make sure you've started with the filename comment as the first line # filename: <filename>.
+    - Ask for a code review.
 
 
 # Answer format:
