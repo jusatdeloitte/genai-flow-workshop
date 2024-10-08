@@ -17,6 +17,10 @@ The repository contains example team configurations in JSON format, which you ca
 
 Follow the [installation instructions](docs/install.md) to get started AutoGen Studio. Once the platform is running you can walk through [this](docs/tetris-config.md) step-by-step guide to building Tetris. Once you have tetris up and running, you can create a [custom workflow](docs/custom-workflow.md).
 
+We provide you with a script that starts AutoGen Studio without loading default configurations:
+
+```bash
+(autogen) $ ./scripts/run-ags-wout-defaults.py ui --appdir ./db
 
 ## Tour of AutoGen Studio
 
