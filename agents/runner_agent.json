@@ -5,8 +5,8 @@
   "config": {
     "name": "Runner_Agent",
     "human_input_mode": "NEVER",
-    "description": "Runs code and returns the output.",
-    "max_consecutive_auto_reply": 5,
+    "description": "Can execute code and return the output",
+    "max_consecutive_auto_reply": 3,
     "system_message": "A helpful assistant, who can execute code.",
     "default_auto_reply": null,
     "llm_config": false,
