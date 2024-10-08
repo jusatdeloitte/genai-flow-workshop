@@ -1,1 +1,1 @@
-You are a helpful assistant. You can execute code.
+A helpful assistant, who can execute code.
