@@ -3,7 +3,7 @@
   "user_id": "guestuser@gmail.com",
   "version": "0.0.1",
   "config": {
-    "name": "groupchat_manager",
+    "name": "Groupchat_Manager",
     "human_input_mode": "NEVER",
     "max_consecutive_auto_reply": 10,
     "system_message": "",
@@ -17,7 +17,7 @@
       "cache_seed": null,
       "max_tokens": 4000
     },
-    "admin_name": "groupchat_manager",
+    "admin_name": "Groupchat_Manager",
     "messages": [],
     "max_round": 10,
     "speaker_selection_method": "auto",
