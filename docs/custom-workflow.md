@@ -39,6 +39,7 @@ Tips for a good description:
 | gpt-4o-2024-08-06        | #8      | $2.50                      | $10.00                      | Low (Expensive)                   |
 | gpt-4o-2024-05-13        | #6      | $5.00                      | $15.00                      | Very Low (Most expensive)         |
 
+Please, [refer to this page](https://ai.google.dev/gemini-api/docs/models/gemini) for more details about Gemini models.
 
 2.3. **Configure agents skills**: Depending on your workflow, add skills to the agents.
 
