@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "type": "userproxy",
   "config": {
-    "name": "sender",
+    "name": "Sender",
     "human_input_mode": "NEVER",
-    "description": "sender",
+    "description": "Sender",
     "max_consecutive_auto_reply": 25,
     "system_message": "A helpful assistant.",
     "default_auto_reply": "TERMINATE",
