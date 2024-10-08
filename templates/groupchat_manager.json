@@ -15,7 +15,7 @@
       "temperature": 0.1,
       "timeout": 600,
       "cache_seed": null,
-      "max_tokens": null
+      "max_tokens": 4000
     },
     "admin_name": "groupchat_manager",
     "messages": [],
