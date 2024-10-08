@@ -36,3 +36,5 @@ We recommend that you start by deleting all workflows, agents, models, and skill
     - As receiver select "Manager" in the "Agents" tab
     
 6. Click on "Test workflow" and prompt with "Create Tetris" *(chat won't be saved)* or move to the Playground *(chat will be saved)*
+
+From now on, you can play around and e.g. change the models, feed your own code to the programmer team, and see if they can meaningfully improve it, or delve into your own workflow creation [with this guide.](custom-workflow.md)
