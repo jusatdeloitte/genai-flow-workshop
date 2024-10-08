@@ -1,0 +1,27 @@
+{
+  "user_id": "guestuser@gmail.com",
+  "version": "0.0.1",
+  "type": "groupchat",
+  "config": {
+    "name": "RR_Manager",
+    "human_input_mode": "NEVER",
+    "max_consecutive_auto_reply": 25,
+    "system_message": "",
+    "code_execution_config": "none",
+    "default_auto_reply": "TERMINATE",
+    "description": "RR_Groupchat_Assistant",
+    "llm_config": {
+      "config_list": [],
+      "temperature": 0.1,
+      "timeout": null,
+      "cache_seed": null,
+      "max_tokens": 4000
+    },
+    "admin_name": "RR_Groupchat_Assistant",
+    "messages": [],
+    "max_round": 15,
+    "speaker_selection_method": "round_robin",
+    "allow_repeat_speaker": true
+  },
+  "task_instruction": null
+}
