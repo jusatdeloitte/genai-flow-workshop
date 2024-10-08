@@ -40,7 +40,7 @@ Anaconda installation was incomplete.
 2.1. Create a new environment with Python v3.10:
 
 ```shell
-(base) $ conda create -n autogen python=3.10
+conda create -n autogen python=3.10
 ```
 
 2.2. Activate the environment:
