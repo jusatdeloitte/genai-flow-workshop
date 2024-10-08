@@ -7,7 +7,7 @@
     "human_input_mode": "NEVER",
     "description": "sender",
     "max_consecutive_auto_reply": 25,
-    "system_message": "You are a helpful assistant.",
+    "system_message": "A helpful assistant.",
     "default_auto_reply": "TERMINATE",
     "llm_config": false,
     "code_execution_config": "none"
