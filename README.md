@@ -21,6 +21,7 @@ We provide you with a script that starts AutoGen Studio without loading default 
 
 ```bash
 (autogen) $ ./scripts/run-ags-wout-defaults.py ui --appdir ./db
+```
 
 ## Tour of AutoGen Studio
 
